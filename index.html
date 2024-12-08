@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,15 +6,60 @@
     <title>Lower Chew Valley Landscape Recovery Map</title>
 
     <!-- Leaflet CSS -->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin="" />
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+<div id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+        <button id="info-button" class="control-button">
+            <i class="fas fa-info"></i>
+        </button>
+        <button id="layers-button" class="control-button active">
+            <i class="fas fa-layers"></i>
+        </button>
+    </div>
+
+    <div id="layers-content" class="sidebar-content">
+        <h3>Map Layers</h3>
+        <div class="layer-group">
+            <h4>Baseline Data</h4>
+            <select id="baseLayer" class="layer-select">
+                <option value="">No layer selected</option>
+                <option value="landcover">Land Cover Classification</option>
+                <option value="satellite">Satellite Imagery</option>
+            </select>
+        </div>
+
+        <div class="layer-description">
+            Select a layer from the drop down to explore ecosystem service delivery
+            and identify opportunities for enhancing ecosystem services in the region.
+        </div>
+    </div>
+
+    <div id="info-content" class="sidebar-content hidden">
+        <h3>About</h3>
+        <p>Lower Chew Valley Landscape Recovery Project visualization tool.</p>
+        <p>This tool helps visualize:</p>
+        <ul>
+            <li>Current land cover classification</li>
+            <li>Future vision mapping</li>
+            <li>Ecosystem services assessment</li>
+        </ul>
+    </div>
+</div>
+
 <div id="map"></div>
 
 <!-- Leaflet JS -->
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
 <!-- Custom JS -->
 <script src="js/map.js"></script>
 </body>
