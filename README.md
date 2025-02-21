@@ -34,7 +34,7 @@ The application visualizes:
   - Remote sensing data integration
   - Machine learning classification outputs
 
- ## Installation
+## Installation
 1. Clone the repository:
 ```bash
 git clone https://github.com/[username]/ant-landscape-recovery.git
@@ -44,22 +44,7 @@ cd ant-landscape-recovery
 
 3. Open index.html in a web browser or use a local server:
 python -m http.server 8000
-
-Usage
-
-Pan and zoom the map to explore different areas
-Toggle layers using the layer control panel
-Click on features to view detailed information
-Use the timeline slider to view future scenarios
-
-Contributing
-
-Fork the repository
-Create your feature branch (git checkout -b feature/AmazingFeature)
-Commit your changes (git commit -m 'Add some AmazingFeature')
-Push to the branch (git push origin feature/AmazingFeature)
-Open a Pull Request
-
+```
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details
 Author
@@ -89,8 +74,3 @@ For questions or collaboration opportunities:
 Project Lead: Murali Thoppil- murali.thoppil@bristol.ac.uk
 Organization: Avon Needs Trees - info@avonneedstrees.org.uk
 
-
-
-
-
-## Project Structure
